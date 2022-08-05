@@ -1,0 +1,30 @@
+{
+	"name": "webRTC peer IP detector",
+	"version": "1.0.0",
+	"description": "Gets ip address and the details of the peer we are connected to in video calls. This works on applications using webRTC peer to peer connection",
+	"manifest_version": 3,
+	"author": "Ashwin Dev P",
+	"action": {
+		"default_popup": "index.html",
+		"default_title": "webRTC Ip detector",
+		"default_icon": "assets/images/location.png"
+	},
+	"icons": {
+		"16": "assets/images/location.png",
+		"48": "assets/images/location.png",
+		"128": "assets/images/location.png"
+	},
+	"content_scripts": [
+		{
+			"run_at": "document_end",
+			"matches": ["<all_urls>"],
+			"js": ["assets/js/content.js"]
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["assets/js/script.js"],
+			"matches": ["<all_urls>"]
+		}
+	]
+}

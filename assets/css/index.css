@@ -1,0 +1,21 @@
+:root {
+	--icon-color: rgba(196, 36, 10, 255);
+}
+
+html {
+	border: 2px solid var(--icon-color);
+}
+
+main {
+	width: 300px;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.my-color {
+	background-color: var(--icon-color);
+	color: #fff;
+}
